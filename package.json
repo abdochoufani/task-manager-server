@@ -1,0 +1,25 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/",
+    "start": "DEBUG=* nodemon --inspect index",
+    "prod": "concurrently \"cd client && npm start\" \"npm start\"",
+    "dev": "concurrently \"cd client && npm install && npm start\" \"npm start\""
+  },
+  "author": "Raghd Hamzeh <raghd@myki.co>",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bluebird": "^3.4.6",
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.2",
+    "redis": "^2.8.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
