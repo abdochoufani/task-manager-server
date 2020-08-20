@@ -11,7 +11,7 @@
   },
   "author": "Raghd Hamzeh <raghd@myki.co>",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.4.6",
     "concurrently": "^4.1.2",
     "nodemon": "^1.19.2",
